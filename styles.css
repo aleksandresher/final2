@@ -1,0 +1,296 @@
+@font-face {
+    src: url(fonts/HelveticaNeue.ttc);
+    font-family: 'HelveticaNeue';
+
+}
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+
+html {
+    /* font-size: 10px; */
+    /* 10px / 16px = 0.625 = 62.5% */
+    /* Percentage of user's browser font-size setting */
+    font-size: 62.5%;
+}
+
+body {
+    font-family: HelveticaNeue;
+}
+
+
+.coworkercontainer {
+    display: flex;
+    flex-direction: column;
+    width: 192rem;
+    height: 134rem;
+    color: #292C2D;
+    align-items: center;
+    justify-content: center;
+    background-color: #f6f6f6;
+}
+
+
+.heading {
+    padding-bottom: 4rem;
+    display: flex;
+    width: 53.2rem;
+    gap: 3rem;
+
+}
+
+.name {
+    display: flex;
+    flex-direction: column;
+}
+
+.lastname {
+    display: flex;
+    flex-direction: column;
+}
+
+.nameof {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.laptopinfo {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.vectorImg {
+    position: absolute;
+    width: 0.9rem;
+    height: 1.6rem;
+    color: black;
+    top: 5.3rem;
+    left: 7rem;
+}
+
+
+
+
+.coworker-info {
+    display: flex;
+    flex-direction: column;
+    padding-top: 15.7rem;
+    gap: 3rem;
+    width: 122.6rem;
+    height: 97.3rem;
+    background-color: #ffffff;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1.8rem;
+    box-shadow: 5px;
+    margin-bottom: 5rem;
+    box-shadow: 0.1rem 0.3rem rgb(143, 145, 145)
+}
+
+.namelastname {
+    display: flex;
+    gap: 6.8rem;
+}
+
+#fname {
+    width: 42.8rem;
+    height: 6rem;
+    border-radius: 8px;
+    font-size: 1.6rem;
+    border-color: #62A1EB;
+    padding-left: 1rem;
+}
+
+.nameheader {
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+
+.nameinfo {
+    font-size: 1.6rem;
+}
+
+.lastnameheader {
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+
+.lastnameinfo {
+    font-size: 1.6rem;
+}
+
+
+#lname {
+    width: 42.8rem;
+    height: 6rem;
+    border-radius: 8px;
+    font-size: 1.6rem;
+    border-color: #62A1EB;
+    padding-left: 1rem;
+}
+
+
+.email {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 3rem;
+}
+
+
+#email {
+    width: 92.6rem;
+    height: 7.6rem;
+    border-radius: 8px;
+    font-size: 1.6rem;
+    padding-left: 1rem;
+}
+
+.emailheader {
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+
+.emailinfo {
+    font-size: 1.6rem;
+}
+
+.numberheader {
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+
+.numbers {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 8rem;
+}
+
+#number {
+    width: 92.6rem;
+    height: 7.6rem;
+    border-radius: 8px;
+    font-size: 1.6rem;
+    padding-left: 1rem;
+}
+
+.numberinfo {
+    font-size: 1.4rem;
+}
+
+.buttonnext {
+    width: 92.6rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+#btn-next {
+    width: 17.6rem;
+    height: 6rem;
+    border-radius: 8px;
+    font-size: 2rem;
+    margin-bottom: 15rem;
+    background-color: #62A1EB;
+    cursor: pointer;
+}
+
+
+.teamscontainer {
+
+    display: flex;
+    align-self: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 92.7rem;
+    height: 7.6rem;
+    margin-bottom: 3rem;
+    font-size: 1.8rem;
+    z-index: 99;
+    position: relative;
+    visibility: visible;
+    border-radius: 8px;
+    background-color: #f6f6f6;
+    padding-top: 2rem;
+    padding-left: 1rem;
+}
+
+
+
+
+.positionscontainer {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 92.7rem;
+    height: 7.6rem;
+    margin-bottom: 3rem;
+    font-size: 1.8rem;
+    z-index: 100;
+    position: relative;
+    visibility: visible;
+    border-radius: 8px;
+    background-color: #f6f6f6;
+    padding-top: 2rem;
+    padding-left: 1rem;
+}
+
+.labelofteams {
+    font-size: 1.8rem;
+    font-weight: 600;
+    position: absolute;
+    z-index: 101;
+    top: 32rem;
+    left: 50.5rem;
+    visibility: visible;
+}
+
+.labelofpositions {
+    font-size: 1.8rem;
+    font-weight: 600;
+    position: absolute;
+    z-index: 103;
+    top: 46rem;
+    left: 50.5rem;
+    visibility: visible;
+}
+
+/* input:invalid {
+    border: red solid 3px;
+} */
+
+/* select all child element of .teamscontainer */
+
+.teamscontainer>* {
+    background-color: #ffffff;
+}
+
+/* select all child element of .positionscontainer */
+
+.positionscontainer>* {
+    background-color: #ffffff;
+}
+
+.namename {
+    font-weight: 600;
+}
+
+.post {
+    font-weight: 800;
+}
+
+.arrowback {
+    position: absolute;
+    top: 3rem;
+    left: 3rem;
+    font-size: 5.3rem;
+}
+
+.img1 {
+    margin-bottom: 5rem;
+}

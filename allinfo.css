@@ -1,0 +1,62 @@
+@font-face {
+    src: url(fonts/HelveticaNeue.ttc);
+    font-family: 'HelveticaNeue';
+
+}
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+
+html {
+    /* font-size: 10px; */
+    /* 10px / 16px = 0.625 = 62.5% */
+    /* Percentage of user's browser font-size setting */
+    font-size: 62.5%;
+}
+
+body {
+    font-family: HelveticaNeue;
+    width: 192rem;
+    height: 108rem;
+    background-color: #f6f6f6;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 10rem;
+    padding: 5rem;
+    align-items: center;
+    justify-content: center;
+}
+
+#bioheader {
+    display: flex;
+    gap: 3rem;
+}
+
+#laptopinfo {
+    height: 10rem;
+    display: flex;
+    gap: 3rem;
+}
+
+#lapinfoApi3 {
+    display: flex;
+    gap: 9rem;
+}
+
+.perinfo {
+    font-size: 2.2rem;
+    list-style: none;
+}
+
+div p {
+    font-size: 2.2rem;
+}

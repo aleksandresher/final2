@@ -1,0 +1,476 @@
+@font-face {
+    src: url(fonts/HelveticaNeue.ttc);
+    font-family: 'HelveticaNeue';
+
+}
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+
+html {
+    /* font-size: 10px; */
+    /* 10px / 16px = 0.625 = 62.5% */
+    /* Percentage of user's browser font-size setting */
+    font-size: 62.5%;
+}
+
+body {
+    font-family: HelveticaNeue;
+    width: 192.2rem;
+    height: 108rem;
+    background-color: #f6f6f6;
+}
+
+.laptopinfocontainer {
+    display: flex;
+    flex-direction: column;
+    width: 122.6rem;
+    height: 157rem;
+    color: #292C2D;
+    align-items: center;
+    background-color: #ffffff;
+    margin-left: 10rem;
+}
+
+#display_image {
+    display: flex;
+    flex-direction: column;
+    gap: 8rem;
+    background-color: #f6f6f6;
+    align-items: center;
+    justify-content: center;
+    width: 87.8rem;
+    height: 42.3rem;
+    margin-bottom: 3rem;
+    background-repeat: no-repeat;
+    align-self: center;
+    border-radius: 18px;
+}
+
+.heading {
+    margin-top: 5rem;
+    padding-bottom: 2rem;
+    display: flex;
+    width: 53.2rem;
+    gap: 3rem;
+
+}
+
+.instr {
+    font-size: 2rem;
+    margin-top: 1rem;
+    font-weight: 600;
+    color: #62a1eb;
+}
+
+#upload {
+    width: 23.3rem;
+    height: 6rem;
+    font-size: 2rem;
+    border-radius: 14px;
+    background-color: #62a1eb;
+    color: #ffffff;
+}
+
+.buttonupload {
+    display: flex;
+    align-items: center;
+
+}
+
+.nameof {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.laptopinfo {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.namebrand {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+
+    gap: 2rem;
+    padding-bottom: 1rem;
+
+
+}
+
+.lapname {
+    width: 43rem;
+    height: 13.4rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.lapbrands {
+    width: 43rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.lapnameheaders {
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+
+.nameinfo {
+    font-size: 1.4rem;
+}
+
+#lapnameheader {
+    height: 6rem;
+    width: 40.7rem;
+    padding-left: 1rem;
+    font-size: 1.6rem;
+    border-radius: 10px;
+
+}
+
+#lapbrand {
+    width: 40.8rem;
+    height: 6rem;
+    margin-bottom: 1rem;
+    padding-left: 1rem;
+    font-size: 1.6rem;
+    border-radius: 10px;
+    font-weight: 600;
+}
+
+.cpu {
+    display: flex;
+    width: 87.8rem;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 2rem;
+    border-top: 1px solid;
+    padding-top: 1rem;
+}
+
+#cpucore {
+    width: 27.7rem;
+    height: 6rem;
+    border-radius: 10px;
+    padding-left: 1rem;
+    font-size: 1.6rem;
+}
+
+#cputhread {
+    width: 27.6rem;
+    height: 6rem;
+    border-radius: 10px;
+    padding-left: 1rem;
+    font-size: 1.6rem;
+}
+
+.core {
+    width: 27.6rem;
+    height: 6rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    background-color: #9ca4a7;
+    border-radius: 10px;
+
+}
+
+.cpucores {
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+
+.cputhreads {
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+
+.cpucontent {
+    padding-left: 1rem;
+    font-size: 1.6rem;
+}
+
+.cpuinfo {
+    font-size: 1.4rem;
+}
+
+.cpucorecontainer {
+    width: 32.4rem;
+    height: 13.4rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.cputhreadcontainer {
+    width: 32.4rem;
+    height: 13.4rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.rammemorycontainer {
+    display: flex;
+    width: 87.8rem;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px solid;
+    padding-bottom: 3rem;
+    margin-top: 2rem;
+}
+
+.rams {
+    width: 45.5rem;
+    height: 13.4rem;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#raminfo {
+    padding-left: 1rem;
+}
+
+.memory {
+    display: flex;
+    width: 40rem;
+    flex-direction: column;
+
+}
+
+#raminfo {
+    width: 40.7rem;
+    height: 6rem;
+    border-radius: 10px;
+}
+
+.checkboxbuttons {
+    display: flex;
+    align-items: center;
+    width: 45.5rem;
+    height: 6rem;
+    margin-top: 1rem;
+    justify-content: center;
+    margin-bottom: 2.2rem;
+    padding-right: 30rem;
+    gap: 3rem;
+
+}
+
+#hhd {
+    width: 7.1rem;
+    height: 2.1rem;
+
+}
+
+#ssd {
+    width: 7.1rem;
+    height: 2.1rem;
+}
+
+.hhdgap {
+    display: flex;
+    align-items: center;
+    width: 7rem;
+}
+
+.ssdgap {
+    display: flex;
+    align-items: center;
+    width: 7rem;
+}
+
+.ram {
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+
+.buyandprice {
+    display: flex;
+    width: 87.8rem;
+    margin-top: 4rem;
+    justify-content: space-between;
+    gap: 6rem;
+}
+
+.buydates {
+    width: 45.5rem;
+    height: 13.4rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.price {
+    width: 45.5rem;
+    height: 13.4rem;
+    display: flex;
+    flex-direction: column;
+}
+
+#datetime {
+    width: 40.7rem;
+    height: 6rem;
+    border-radius: 10px;
+    padding-left: 1rem;
+}
+
+#pricenum {
+    width: 40.7rem;
+    height: 6rem;
+    border-radius: 10px;
+    padding-left: 1rem;
+}
+
+.date {
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+
+.priceheader {
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+
+.priceinfo {
+    font-size: 1.4rem;
+}
+
+.laptopstate {
+    display: flex;
+    width: 87.8rem;
+    flex-direction: column;
+    align-items: flex-start;
+    height: 6rem;
+    gap: 3rem;
+
+}
+
+.statebuttons {
+    display: flex;
+    gap: 4rem;
+}
+
+.stateheader {
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+
+.new {
+    font-size: 1.6rem;
+    display: flex;
+    gap: 1rem;
+}
+
+.used {
+    font-size: 1.6rem;
+    display: flex;
+    gap: 1rem;
+}
+
+.backorsave {
+    display: flex;
+    width: 87.8rem;
+    height: 6rem;
+    justify-content: space-between;
+    margin-top: 5rem;
+
+}
+
+.back {
+    display: flex;
+    width: 4.5rem;
+    height: 6rem;
+
+    justify-content: flex-start;
+
+}
+
+#btn-back {
+    background-color: #ffffff;
+    border: none;
+    font-size: 1.8rem;
+    color: #62a1eb;
+}
+
+.save {
+    display: flex;
+    width: 21.9rem;
+    height: 6rem;
+    background-color: #62a1eb;
+    justify-content: center;
+    border-radius: 10px;
+
+
+}
+
+#btn-save {
+    font-size: 2rem;
+    color: #ffffff;
+    background-color: #62a1eb;
+    border: none;
+    cursor: pointer;
+}
+
+.brandscontainer {
+
+    width: 40rem;
+    height: 6rem;
+    z-index: 344;
+    visibility: visible;
+    border-radius: 8px;
+    margin-bottom: 0.8rem;
+    position: relative;
+    font-size: 1.8rem;
+    padding-left: 1rem;
+}
+
+.cpus {
+
+    width: 27.7rem;
+    height: 6rem;
+    border-radius: 10px;
+    padding-left: 1rem;
+}
+
+.brands {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 45.5rem;
+    height: 13.4rem;
+}
+
+.labelofbrands {
+    position: absolute;
+    font-size: 1.8rem;
+    font-weight: 600;
+    z-index: 400;
+    top: 59.6rem;
+    left: 75.5rem;
+    visibility: visible;
+}
+
+.labelofcpus {
+    position: absolute;
+    font-size: 1.8rem;
+    font-weight: 600;
+    z-index: 400;
+    top: 78rem;
+    left: 27rem;
+    visibility: visible;
+}

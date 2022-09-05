@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>laptopinfo</title>
+    <link rel="stylesheet" href="laptop.css">
+    <script src="secondscript.js" defer></script>
+</head>
+
+<body>
+    <div class="laptopinfocontainer">
+
+
+
+        <div class="heading">
+            <div>
+                <p class="nameof">თანამშრომლის ინფო</p>
+            </div>
+            <div>
+                <p class="laptopinfo">ლეპტოპის მახასიათებლები</p>
+            </div>
+        </div>
+
+
+        <form id="laptopform">
+
+
+
+
+            <div id="display_image">
+                <label for="image_input" class="btn">ატვირთე ფოტო</label>
+                <input type="file" id="image_input">
+            </div>
+
+
+
+
+            <div class="namebrand">
+                <div class="lapname">
+                    <label for="lapname" class="lapnameheaders">ლეპტოპის სახელი</label><br>
+                    <input type="text" id="lapnameheader" name="laptop_name" placeholder="HR" value=""><br>
+                    <p class="nameinfo">ლათინური ასოები, ციფრები, !@#$%^&*()_+= </p>
+                </div>
+
+
+
+                <div class="brands">
+                    <label class="labelofbrands" for="team">ლეპტოპის ბრენდი</label>
+                    <select class="brandscontainer">
+                        <option></option>
+                    </select>
+                </div>
+            </div>
+
+
+
+
+
+
+            <div class="cpu">
+
+                <div class="cpuscontainer">
+                    <label class="labelofcpus" for="cpu" name="laptop_cpu">CPU</label>
+                    <select class="cpus" name="laptop_cpu">
+                        <option></option>
+                    </select>
+
+                </div>
+
+
+                <div class="cpucorecontainer">
+                    <label for="cpucore" class="cpucores" name="laptop_cpu_cores">CPU-ს ბირთვი</label><br>
+                    <input type="number" id="cpucore" name="laptop_cpu_cores" placeholder="14" value=""><br>
+                    <p class="cpuinfo">მხოლოდ ციფრები</p>
+                </div>
+                <div class="cputhreadcontainer">
+                    <label for="cputhread" class="cputhreads" name="laptop_cpu_threads">CPU-ს ნაკადი</label><br>
+                    <input type="number" id="cputhread" name="laptop_cpu_threads" placeholder="365" value=""><br>
+                    <p class="cpuinfo">მხოლოდ ციფრები</p>
+                </div>
+            </div>
+
+
+
+            <div class="rammemorycontainer">
+                <div class="rams">
+                    <label for="raminfo" class="ram" name="laptop_ram">ლეპტოპის RAM (GB)</label><br>
+                    <input type="number" id="raminfo" name="laptop_ram" placeholder="16" value="" pattern=""><br>
+                    <p class="cpuinfo">მხოლოდ ციფრები</p>
+                </div>
+
+
+                <div class="memory">
+                    <div class="memorycheckbox">
+                        <input type="radio" id="hhd" name="laptop_hard_drive_type" value="HHD">
+                        <label for="html">HHD</label><br>
+                        <input type="radio" id="ssd" name="laptop_hard_drive_type" value="SSD">
+                        <label for="css">SSD</label><br>
+                    </div>
+
+                </div>
+            </div>
+
+
+
+
+            <div class="buyandprice">
+                <div class="buydates">
+
+                    <label for="buydate" class="date" name="laptop_purchase_date">შეძენის რიცხვი (არჩევითი)</label><br>
+                    <input type="text" placeholder="დდ/თთ/წწწწ" id="datetime" onfocus="(this.type='date')">
+
+                </div>
+
+                <div class=" price">
+                    <label for="price" class="priceheader" name="">ლეპტოპის ფასი</label><br>
+                    <input type="number" id="pricenum" name="laptop_price" placeholder="0000" value=""><br>
+                    <p class="priceinfo">მხოლოდ ციფრები</p>
+                </div>
+            </div>
+
+
+            <div class="laptopstate">
+                <div class="state">
+                    <label for="state" class="stateheader">ლეპტოპის მდგომარეობა</label><br>
+                </div>
+                <div class="statebuttons">
+                    <div class="new">
+                        <input type="checkbox" id="newlap" name="new">
+                        <label for="newlap">ახალი</label>
+                    </div>
+                    <div class="used">
+                        <input type="checkbox" id="usedlap" name="used">
+                        <label for="usedlap">მეორადი</label>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="backorsave">
+                <div class="back">
+                    <button id="btn-back" onclick="location.href='coworkerinfo.html';">უკან</button>
+                </div>
+                <div class="save">
+                    <button type="submit" id="btn-save" value="Submit">დამახსოვრება</button>
+                </div>
+            </div>
+
+
+    </div>
+
+
+
+
+
+    </form>
+
+    </div>
+
+
+
+
+
+
+
+
+</body>
+
+</html>

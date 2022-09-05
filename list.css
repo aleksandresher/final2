@@ -1,0 +1,106 @@
+@font-face {
+    src: url(fonts/HelveticaNeue.ttc);
+    font-family: 'HelveticaNeue';
+
+}
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+
+html {
+    /* font-size: 10px; */
+    /* 10px / 16px = 0.625 = 62.5% */
+    /* Percentage of user's browser font-size setting */
+    font-size: 62.5%;
+}
+
+body {
+    font-family: HelveticaNeue;
+    width: 192.2rem;
+    height: 108rem;
+    background-color: #a7a0a0;
+}
+
+#list {
+    width: 192.2rem;
+    height: 108rem;
+    background-color: azure;
+}
+
+#listitem {
+
+    padding-left: 2rem;
+    display: flex;
+    width: 56rem;
+    height: 25rem;
+    background-color: #EAFAFF;
+    border-radius: 10px;
+
+}
+
+#imgcontainer {
+    width: 25rem;
+    height: 17rem;
+}
+
+#userlap {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1rem;
+    gap: 3rem;
+    width: 49.5rem;
+    height: 10rem;
+}
+
+#ownername {
+    margin-top: 2rem;
+    font-size: 1.8rem;
+
+}
+
+#morebtn {
+    margin-top: 3rem;
+    width: 9.4rem;
+}
+
+#lapname {
+    font-size: 1.8rem;
+}
+
+#lapimg {
+    width: 10rem;
+    height: 5rem;
+}
+
+#namesurname {
+    display: flex;
+    gap: 0.5rem;
+}
+
+#surname {
+    font-size: 1.8rem;
+    margin-top: 2rem;
+}
+
+#laptopinfo {
+    width: 49.5rem;
+    height: 20rem;
+}
+
+#lapbio {
+    width: 6rem;
+}
+
+.perinfo {
+    font-size: 2.2rem;
+}
+
+.container {
+    gap: 2rem;
+}

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>coworkerinfo</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+
+</head>
+
+<body>
+    <div class="coworkercontainer">
+
+        <img class="arrowback " src="img/Group 4.png">
+
+        <div class="heading">
+            <div>
+                <p class="nameof">თანამშრომლის ინფო</p>
+            </div>
+            <div>
+                <p class="laptopinfo">ლეპტოპის მახასიათებლები</p>
+            </div>
+        </div>
+
+
+        <form class="coworker-info" id="myform" method="post">
+            <div class=" namelastname">
+                <div class="name">
+                    <label for="fname" class="nameheader">სახელი</label><br>
+                    <input type="text" id="fname" name="name" placeholder="გრიშა" value=""><br>
+                    <p class=" nameinfo">მინიმუმ 2 სიმბოლო, ქართული ასოები</p>
+                </div>
+                <div class="lastname">
+                    <label for="lname" class="lastnameheader">გვარი:</label><br>
+                    <input type="text" id="lname" name="surname" placeholder="ბაგრატიონი" value="" "><br>
+                    <p class=" lastnameinfo">მინიმუმ 2 სიმბოლო, ქართული ასოები</p>
+                </div>
+            </div>
+
+
+            <div class="teamc">
+                <label class="labelofteams" for="team">თიმი</label>
+                <select name="team" class="teamscontainer" id="teamvalue">
+                    <option class="namename"></option>
+                </select>
+            </div>
+
+
+            <div class="position">
+                <label class="labelofpositions" for="pos">პოზიცია</label>
+                <select name="pos" class="positionscontainer">
+                    <option class="post"></option>
+                </select>
+            </div>
+
+
+            <!-- <label for="position"></label>
+                <input type="text" id="position" name="position" placeholder="პოზიცია">
+                <img src="img/down.png" class="tpositiondown"> -->
+
+            <!-- </div> -->
+
+            <div class="email">
+                <label for="email" class="emailheader">მეილი</label><br>
+                <input type="email" id="email" name="email" placeholder="grish666@redberry.ge"><br>
+                <p class="emailinfo">უნდა მთავრდებოდეს @redberry.ge-ით</p>
+            </div>
+
+
+            <div class="numbers">
+                <label for="number" class="numberheader">ტელეფონის ნომერი</label><br>
+                <input type=" number" id="number" name=" phone_number" placeholder="+995 598 00 07 01"><br>
+                <p class="numberinfo">უნდა აკმაყოფილებდეს ქართული მობ-ნომრის ფორმატს</p>
+            </div>
+
+
+            <div class="buttonnext">
+                <button type="submit" id="btn-next">შემდეგი</button>
+
+            </div>
+
+        </form>
+
+
+        <div class="img1">
+            <img src="img/logo.png" alt="logo">
+        </div>
+
+        <!-- onclick="location.href='laptopinfo.html'; -->
+
+    </div>
+
+
+
+
+
+
+
+    <!-- <div class="positionscontainer">
+        <button class="position">
+
+        </button>
+    </div>
+
+
+
+
+
+
+    <button class="testbtn">click me</button>
+
+    <button class="testbtn2">click for positions</button> -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>
