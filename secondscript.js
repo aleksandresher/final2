@@ -227,6 +227,7 @@ form2.addEventListener('submit', function (e) {
         .then(function (data) {
             console.log(data)
             if (data.message = 'Information recorded') {
+                 window.location.href = 'list.html';
                 console.log('good job');
             }
         }).catch(error => console.error('Error:', error));
